@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PhishGuardian</title>
+</head>
+<body>
+    <h1>PhishGuardian - Phishing URL Checker</h1>
+    <form method="post">
+        <input type="text" name="url" placeholder="Paste URL here" size="50" required>
+        <button type="submit">Check</button>
+    </form>
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
